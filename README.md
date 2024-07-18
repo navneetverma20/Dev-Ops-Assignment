@@ -228,7 +228,3 @@ Create a `Jenkinsfile` to define the Jenkins pipeline.
      ![Jenkins Pipeline](images/jenkins_pipeline.png)
      ![Test Results](images/test_results.png)
      ```
-
-### Conclusion
-
-By following these steps, you will have successfully automated the testing process of your Django-based web application using Jenkins within a Docker container. The project will be documented in a GitHub repository with a detailed README file, including images and reports for Docker and Jenkins.
