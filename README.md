@@ -229,12 +229,6 @@ Create a `Jenkinsfile` to define the Jenkins pipeline.
      ![Test Results](images/test_results.png)
      ```
 
-4. **Add Images and Reports**
-
-   - Take screenshots of your Jenkins setup, pipeline, and test results.
-   - Save them in an `images` directory within your project.
-   - Reference these images in your `README.md` as shown above.
-
 ### Conclusion
 
 By following these steps, you will have successfully automated the testing process of your Django-based web application using Jenkins within a Docker container. The project will be documented in a GitHub repository with a detailed README file, including images and reports for Docker and Jenkins.
