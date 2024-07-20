@@ -221,10 +221,38 @@ Create a `Jenkinsfile` to define the Jenkins pipeline.
      2. Builds the Docker image.
      3. Runs the tests inside the Docker container.
      4. Reports the test results.
+    
+     ## Dockerfile
+[Uploading Do# Use the official Python image from the Docker Hub
+FROM python:3.10
+
+# Set the working directory in the container
+WORKDIR /usr/src/app
+
+# Copy the requirements file into the container
+COPY requirements.txt ./
+
+# Install the Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the application code into the container
+COPY . .
+
+# Expose port 8000 to the host
+EXPOSE 8000
+
+# Command to run the Django development server
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+ckerfile…]()
+
 
      ## Screenshots
+<img width="1440" alt="Screenshot 2024-07-20 at 12 55 23 PM" src="https://github.com/user-attachments/assets/e732feea-7b3e-41ff-89a9-28f5770ee9e9">
+
+<img width="1440" alt="Screenshot 2024-07-20 at 12 55 30 PM" src="https://github.com/user-attachments/assets/e8a4c34c-995d-4123-8538-e50aae6692b9">
 
      ![Jenkins Dashboard](images/jenkins_dashboard.png)
      ![Jenkins Pipeline](images/jenkins_pipeline.png)
      ![Test Results](images/test_results.png)
      ```
+[Untitled.pdf](https://github.com/user-attachments/files/16319239/Untitled.pdf)
